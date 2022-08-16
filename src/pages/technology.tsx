@@ -144,11 +144,11 @@ const Technology: NextPage = () => {
             IT.
           </Paragraph>
         </Container>
-        <Container mt='32px' mb='32px' sx={{}}>
-            <Flex sx={{justifyContent:'center'}}>
-            <Image src='/google-workspace.svg' sx={{}}></Image>
-            </Flex>
-            <Box
+        <Container mt="32px" mb="32px" sx={{}}>
+          <Flex sx={{ justifyContent: "center" }}>
+            <Image src="/google-workspace.svg" sx={{}}></Image>
+          </Flex>
+          <Box
             sx={{
               padding: "16px",
               gap: "10px",
