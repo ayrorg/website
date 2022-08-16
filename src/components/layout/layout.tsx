@@ -1,8 +1,7 @@
-import React from 'react';
-import { Flex } from 'theme-ui';
-import { Footer } from './footer/footer';
-import { Header } from './header/header';
-
+import React from "react";
+import { Flex } from "theme-ui";
+import { Footer } from "./footer/footer";
+import { Header } from "./header/header";
 
 export interface InputProps {
   children: React.ReactElement;
@@ -11,16 +10,16 @@ export interface InputProps {
 export const Layout: React.FC<InputProps> = ({ children }) => (
   <Flex
     sx={{
-      flexDirection: 'column',
+      flexDirection: "column",
       //gap: 0,
       pb: 0,
-      backgroundColor: 'blue06'
+      backgroundColor: "blue06",
     }}
   >
     <Header />
     <Flex
       sx={{
-        alignItems: 'stretch',
+        alignItems: "stretch",
       }}
     >
       {children}
@@ -29,4 +28,3 @@ export const Layout: React.FC<InputProps> = ({ children }) => (
     <Footer />
   </Flex>
 );
-

@@ -1,6 +1,14 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { Box, Container, Flex, IconButton, Link, NavLink, Paragraph } from "theme-ui";
+import {
+  Box,
+  Container,
+  Flex,
+  IconButton,
+  Link,
+  NavLink,
+  Paragraph,
+} from "theme-ui";
 import { Cross } from "./cross";
 import { Hamburger } from "./hamburger";
 import { Logo } from "./logo";
@@ -58,7 +66,7 @@ export const Header: React.FC = () => {
               ml: "20px",
               mt: "20px",
               gap: 4,
-              height: "70%",            
+              height: "70%",
             }}
           >
             <Link href="/about" sx={{ color: "black", textDecoration: "none" }}>
@@ -88,16 +96,17 @@ export const Header: React.FC = () => {
                 gap: "10px",
                 width: "364px",
                 height: "55px",
-                mt: '20px',
+                mt: "20px",
                 border: "3px solid #D9EBFF",
                 borderRadius: "8px",
-                ml: '-20px',
+                ml: "-20px",
               }}
             >
-                <Link href='/become-customer' sx={{color: "black", textDecoration: "none"}}>
-               <Box sx={{ml:'110px'}}>
-              Bli kunde →
-              </Box>
+              <Link
+                href="/become-customer"
+                sx={{ color: "black", textDecoration: "none" }}
+              >
+                <Box sx={{ ml: "110px" }}>Bli kunde →</Box>
               </Link>
             </Box>
           </Flex>
@@ -125,7 +134,6 @@ export const Header: React.FC = () => {
             }}
             onClick={() => setMenuIsOpen(!menuIsOpen)}
           >
-            {" "}
             <Hamburger />
           </IconButton>
         </Flex>

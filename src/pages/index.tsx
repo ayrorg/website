@@ -26,8 +26,8 @@ const Home: NextPage = () => {
           og første Google Cloud-partnere.
         </Paragraph>
         <Link
-          href="/about"
-          sx={{ textDecoration: "none", color: "black", mb: "10px" }}
+          href="/technology"
+          sx={{  color: "black", mb: "10px" }}
         >
           <Paragraph variant="standard">Les om hvordan →</Paragraph>
         </Link>
@@ -125,7 +125,6 @@ const Home: NextPage = () => {
             </Paragraph>
           </Link>
         </Container>
-
       </Grid>
     </Layout>
   );
