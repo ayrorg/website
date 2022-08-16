@@ -144,6 +144,33 @@ const Technology: NextPage = () => {
             IT.
           </Paragraph>
         </Container>
+        <Container mt='32px' mb='32px' sx={{}}>
+            <Flex sx={{justifyContent:'center'}}>
+            <Image src='/google-workspace.svg' sx={{}}></Image>
+            </Flex>
+            <Box
+            sx={{
+              padding: "16px",
+              gap: "10px",
+              width: "364px",
+              height: "55px",
+              mt: "32px",
+              border: "3px solid #D9EBFF",
+              borderRadius: "8px",
+              fontFamily: "DM Sans",
+            }}
+          >
+            <Link
+              href="/courses"
+              sx={{ color: "black", textDecoration: "none" }}
+            >
+              <Flex sx={{ justifyContent: "space-between" }}>
+                <Box ml="0">Sett i gang med Google Workspace</Box>
+                <Box mr="0">→</Box>
+              </Flex>
+            </Link>
+          </Box>
+        </Container>
       </Grid>
     </Layout>
   );
