@@ -14,6 +14,7 @@ export const Layout: React.FC<InputProps> = ({ children }) => (
       //gap: 0,
       pb: 0,
       backgroundColor: "blue06",
+      maxWidth: "800px",
     }}
   >
     <Header />

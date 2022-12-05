@@ -7,6 +7,7 @@ const About: NextPage = () => {
     <Layout>
       <Grid sx={{ width: "100%", px: 4 }}>
         <Container>
+
           <Paragraph variant="heading">
             Bruk mer tid på det du synes er gøy!
           </Paragraph>
