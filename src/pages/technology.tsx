@@ -24,9 +24,9 @@ const Technology: NextPage = () => {
             sx={{
               padding: "16px",
               gap: "10px",
-              width: "364px",
+              width: "100%",
               height: "55px",
-              mt: "20px",
+              mt: "30px",
               border: "3px solid #D9EBFF",
               borderRadius: "8px",
               fontFamily: "DM Sans",
@@ -36,7 +36,7 @@ const Technology: NextPage = () => {
               href="/courses"
               sx={{ color: "black", textDecoration: "none" }}
             >
-              <Flex sx={{ justifyContent: "space-between" }}>
+              <Flex sx={{ justifyContent: "space-between",  }}>
                 <Box ml="0">Kurs og kompetanse</Box>
                 <Box mr="0">→</Box>
               </Flex>
@@ -46,9 +46,9 @@ const Technology: NextPage = () => {
             sx={{
               padding: "16px",
               gap: "10px",
-              width: "364px",
+              width: "100%",
               height: "55px",
-              mt: "20px",
+              mt: "10px",
               border: "3px solid #D9EBFF",
               borderRadius: "8px",
               fontFamily: "DM Sans",
@@ -68,9 +68,9 @@ const Technology: NextPage = () => {
             sx={{
               padding: "16px",
               gap: "10px",
-              width: "364px",
+              width: "100%",
               height: "55px",
-              mt: "20px",
+              mt: "10px",
               border: "3px solid #D9EBFF",
               borderRadius: "8px",
               fontFamily: "DM Sans",
@@ -90,9 +90,9 @@ const Technology: NextPage = () => {
             sx={{
               padding: "16px",
               gap: "10px",
-              width: "364px",
+              width: "100%",
               height: "55px",
-              mt: "20px",
+              mt: "10px",
               border: "3px solid #D9EBFF",
               borderRadius: "8px",
               fontFamily: "DM Sans",
@@ -110,11 +110,11 @@ const Technology: NextPage = () => {
           </Box>
           <Box
             sx={{
-              padding: "16px",
+              padding: "14px",
               gap: "10px",
-              width: "364px",
+              width: "100%",
               height: "55px",
-              mt: "20px",
+              mt: "10px",
               border: "3px solid #D9EBFF",
               borderRadius: "8px",
               fontFamily: "DM Sans",
