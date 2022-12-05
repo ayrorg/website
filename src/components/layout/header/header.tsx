@@ -63,52 +63,50 @@ export const Header: React.FC = () => {
               flexDirection: "column",
               fontFamily: "DM Sans",
               mr: "auto",
-              ml: "20px",
+
               mt: "20px",
               gap: 4,
+              width: "100%",
               height: "70%",
             }}
           >
-            <Link href="/about" sx={{ color: "black", textDecoration: "none" }}>
+            <Link href="/about" sx={{ color: "black", textDecoration: "none", ml: "20px", }}>
               Om oss
             </Link>
             <Link
               href="/principles"
-              sx={{ color: "black", textDecoration: "none" }}
+              sx={{ color: "black", textDecoration: "none", ml: "20px",  }}
             >
               Våre prinsipper
             </Link>
             <Link
               href="/people"
-              sx={{ color: "black", textDecoration: "none" }}
+              sx={{ color: "black", textDecoration: "none", ml: "20px",  }}
             >
               Folkene bak
             </Link>
             <Link
               href="/customer-service"
-              sx={{ color: "black", textDecoration: "none" }}
+              sx={{ color: "black", textDecoration: "none" , mb: "20px", ml: "20px", }}
             >
               Kundestøtte
             </Link>
-            <Box
+            <Flex
               sx={{
-                padding: "16px",
-                gap: "10px",
-                width: "364px",
+                py: "15px",
                 height: "55px",
-                mt: "20px",
                 border: "3px solid #D9EBFF",
                 borderRadius: "8px",
-                ml: "-20px",
+                justifyContent: "center"
               }}
             >
               <Link
                 href="/become-customer"
                 sx={{ color: "black", textDecoration: "none" }}
               >
-                <Box sx={{ ml: "110px" }}>Bli kunde →</Box>
+                <Box sx={{ }}>Bli kunde →</Box>
               </Link>
-            </Box>
+            </Flex>
           </Flex>
         </Flex>
       )}
