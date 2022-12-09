@@ -36,7 +36,7 @@ const Technology: NextPage = () => {
               href="/courses"
               sx={{ color: "black", textDecoration: "none" }}
             >
-              <Flex sx={{ justifyContent: "space-between",  }}>
+              <Flex sx={{ justifyContent: "space-between" }}>
                 <Box ml="0">Kurs og kompetanse</Box>
                 <Box mr="0">→</Box>
               </Flex>
