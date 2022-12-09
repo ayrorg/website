@@ -34,13 +34,18 @@ export const Footer: React.FC = () => (
         }}
       >
         <Link href="https://www.facebook.com/ayrnorge/" sx={{ p: "10px" }}>
-        <Image src="./facebook.svg" /></Link>
-        <Link href="https://www.linkedin.com/company/ayr-as/" sx={{ p: "10px" }}>
-        <Image src="./linkedin.svg" /></Link>
+          <Image src="./facebook.svg" />
+        </Link>
+        <Link
+          href="https://www.linkedin.com/company/ayr-as/"
+          sx={{ p: "10px" }}
+        >
+          <Image src="./linkedin.svg" />
+        </Link>
       </Flex>
     </Container>
     <Flex sx={{ justifyContent: "center" }}>
-    <Image src="gcpartner.svg" mt="30px"></Image>
+      <Image src="gcpartner.svg" mt="30px"></Image>
     </Flex>
   </Box>
 );

@@ -25,10 +25,7 @@ const Home: NextPage = () => {
           Vi er stolte av å være et av nordens mest fremoverlente IT-selskaper
           og første Google Cloud-partnere.
         </Paragraph>
-        <Link
-          href="/technology"
-          sx={{  color: "black", mb: "10px" }}
-        >
+        <Link href="/technology" sx={{ color: "black", mb: "10px" }}>
           <Paragraph variant="standard">Les om hvordan →</Paragraph>
         </Link>
         <Container
