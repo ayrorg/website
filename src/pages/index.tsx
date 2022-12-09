@@ -75,7 +75,12 @@ const Home: NextPage = () => {
           <Image src="./brand-logos/kolonihagen.svg"></Image>
         </Grid>
         <Container backgroundColor="offwhite" sx={{ borderRadius: "8px" }}>
-          <Image src="computer.svg"></Image>
+          <Image
+            src="computer.svg"
+            sx={{
+              size: "stretch",
+            }}
+          />
           <Paragraph sx={{ fontSize: "24px", fontWeight: "700", p: 4, pb: 0 }}>
             Derfor valgte vi Google - og hvorfor vi anbefaler deg å gjøre det
             også
@@ -92,7 +97,12 @@ const Home: NextPage = () => {
           </Link>
         </Container>
         <Container backgroundColor="offwhite" sx={{ borderRadius: "8px" }}>
-          <Image src="safety.svg"></Image>
+          <Image
+            src="safety.svg"
+            sx={{
+              size: "stretch",
+            }}
+          />
           <Paragraph sx={{ fontSize: "24px", fontWeight: "700", p: 4, pb: 0 }}>
             Slik øker du sikkerheten i Google Workspace - 6 tips til din bedrift
           </Paragraph>
@@ -108,7 +118,12 @@ const Home: NextPage = () => {
           </Link>
         </Container>
         <Container backgroundColor="offwhite" sx={{ borderRadius: "8px" }}>
-          <Image src="trick.svg"></Image>
+          <Image
+            src="trick.svg"
+            sx={{
+              size: "stretch",
+            }}
+          />
           <Paragraph sx={{ fontSize: "24px", fontWeight: "700", p: 4, pb: 0 }}>
             Ikke gå glipp av dette i Google Kalender{" "}
           </Paragraph>
