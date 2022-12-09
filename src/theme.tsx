@@ -18,7 +18,7 @@ export const theme = {
     heading: {
       fontWeight: "700",
       fontSize: "36px",
-      lineHeight:'100%'
+      lineHeight: "100%",
     },
     standard: {
       fontWeight: "400",

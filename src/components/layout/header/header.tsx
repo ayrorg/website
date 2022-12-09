@@ -70,24 +70,32 @@ export const Header: React.FC = () => {
               height: "70%",
             }}
           >
-            <Link href="/about" sx={{ color: "black", textDecoration: "none", ml: "20px", }}>
+            <Link
+              href="/about"
+              sx={{ color: "black", textDecoration: "none", ml: "20px" }}
+            >
               Om oss
             </Link>
             <Link
               href="/principles"
-              sx={{ color: "black", textDecoration: "none", ml: "20px",  }}
+              sx={{ color: "black", textDecoration: "none", ml: "20px" }}
             >
               Våre prinsipper
             </Link>
             <Link
               href="/people"
-              sx={{ color: "black", textDecoration: "none", ml: "20px",  }}
+              sx={{ color: "black", textDecoration: "none", ml: "20px" }}
             >
               Folkene bak
             </Link>
             <Link
               href="/customer-service"
-              sx={{ color: "black", textDecoration: "none" , mb: "20px", ml: "20px", }}
+              sx={{
+                color: "black",
+                textDecoration: "none",
+                mb: "20px",
+                ml: "20px",
+              }}
             >
               Kundestøtte
             </Link>
@@ -97,14 +105,14 @@ export const Header: React.FC = () => {
                 height: "55px",
                 border: "3px solid #D9EBFF",
                 borderRadius: "8px",
-                justifyContent: "center"
+                justifyContent: "center",
               }}
             >
               <Link
                 href="/become-customer"
                 sx={{ color: "black", textDecoration: "none" }}
               >
-                <Box sx={{ }}>Bli kunde →</Box>
+                <Box sx={{}}>Bli kunde →</Box>
               </Link>
             </Flex>
           </Flex>
