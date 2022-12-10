@@ -6,7 +6,7 @@ type Props = ThemeUIStyleObject & SVGProps<SVGSVGElement>;
 export const Cross: FC<Props> = () => {
   return (
     <svg
-      width="46"
+      width="45"
       height="46"
       viewBox="0 0 46 46"
       fill="none"

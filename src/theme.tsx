@@ -1,6 +1,9 @@
-import { fontFamily } from "styled-system";
-
 export const theme = {
+  borders: ["0.17em"],
+  // 9px / 18px / 36px / 45px / 54px-- 18px === 1em
+  spaces: ["0.5em", "1em", "2em", "2.5em", "3em"],
+  // 9 px / 40px
+  radii: ["0.5em", "2.5em"],
   colors: {
     blue06: "#F2F8FF",
     blue00: "#005ABD",
@@ -12,26 +15,32 @@ export const theme = {
   fonts: {
     heading: "DM Sans",
     body: "DM Sans",
+    mono: "DM Sans",
   },
+  fontSizes: ["0.56em", "1em", "1.34em", "2em"],
   text: {
-    fontFamily: "DM Sans",
     heading: {
       fontWeight: "700",
-      fontSize: "36px",
+      fontSize: 3,
       lineHeight: "100%",
     },
     standard: {
       fontWeight: "400",
-      fontSize: "18px",
+      fontSize: 1,
     },
     standardwhite: {
       fontWeight: "400",
-      fontSize: "18px",
+      fontSize: 1,
       color: "ayrblue10",
     },
     smallheader: {
-      fontSize: "18px",
+      fontSize: 1,
       fontWeight: "700",
+    },
+  },
+  links: {
+    primary: {
+      textDecorationLine: "none",
     },
   },
 };

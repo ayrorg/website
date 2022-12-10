@@ -5,11 +5,11 @@ import { Layout } from "../components/layout/layout";
 const Courses: NextPage = () => {
   return (
     <Layout>
-      <Grid sx={{ width: "100%", px: 4 }}>
+      <Grid sx={{ width: "100%", px: "2em" }}>
         <Container>
           <Paragraph
             sx={{
-              fontSize: "25px",
+              fontSize: 2,
               fontWeight: "400",
               textAlign: "center",
             }}
@@ -20,7 +20,7 @@ const Courses: NextPage = () => {
           </Paragraph>
           <Paragraph
             sx={{
-              fontSize: "10px",
+              fontSize: 0,
               fontWeight: "300",
               textAlign: "right",
             }}

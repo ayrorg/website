@@ -32,7 +32,7 @@ export const Header: React.FC = () => {
             top: 0,
             backgroundColor: "blue04",
             width: "100%",
-            height: "460px",
+            height: "26em",
             zIndex: 2,
             display: "flex",
             p: 4,
@@ -46,11 +46,10 @@ export const Header: React.FC = () => {
           >
             <IconButton
               sx={{
-                width: "45px",
-                height: "25px",
+                width: "3em",
                 backgroundColor: "dark100",
+                mt: "0.6em",
                 ml: "auto",
-                mt: "12px",
               }}
               onClick={() => setMenuIsOpen(false)}
             >
@@ -64,7 +63,7 @@ export const Header: React.FC = () => {
               fontFamily: "DM Sans",
               mr: "auto",
 
-              mt: "20px",
+              mt: 1,
               gap: 4,
               width: "100%",
               height: "70%",
@@ -72,19 +71,19 @@ export const Header: React.FC = () => {
           >
             <Link
               href="/about"
-              sx={{ color: "black", textDecoration: "none", ml: "20px" }}
+              sx={{ color: "black", textDecoration: "none", ml: 1 }}
             >
               Om oss
             </Link>
             <Link
               href="/principles"
-              sx={{ color: "black", textDecoration: "none", ml: "20px" }}
+              sx={{ color: "black", textDecoration: "none", ml: 1 }}
             >
               Våre prinsipper
             </Link>
             <Link
               href="/people"
-              sx={{ color: "black", textDecoration: "none", ml: "20px" }}
+              sx={{ color: "black", textDecoration: "none", ml: 1 }}
             >
               Folkene bak
             </Link>
@@ -93,50 +92,42 @@ export const Header: React.FC = () => {
               sx={{
                 color: "black",
                 textDecoration: "none",
-                mb: "20px",
-                ml: "20px",
+                mb: 1,
+                ml: 1,
               }}
             >
               Kundestøtte
             </Link>
-            <Flex
-              sx={{
-                py: "15px",
-                height: "55px",
-                border: "3px solid #D9EBFF",
-                borderRadius: "8px",
-                justifyContent: "center",
-              }}
+            <Link
+              href="/become-customer"
+              sx={{ color: "black", textDecoration: "none" }}
             >
-              <Link
-                href="/become-customer"
-                sx={{ color: "black", textDecoration: "none" }}
+              <Flex
+                sx={{
+                  alignItems: "center",
+                  height: "3em",
+                  border: "0.17em solid #D9EBFF",
+                  borderRadius: 0,
+                  justifyContent: "center",
+                }}
               >
                 <Box sx={{}}>Bli kunde →</Box>
-              </Link>
-            </Flex>
+              </Flex>
+            </Link>
           </Flex>
         </Flex>
       )}
 
       <Container variant="header">
-        <Flex sx={{ alignItems: "center", gap: 6 }}>
+        <Flex sx={{ alignItems: "center", justifyContent: "space-between" }}>
           <Link href={"/"}>
-            <Logo
-              sx={{
-                maxWidth: "100px",
-                cursor: "pointer",
-                height: "40.87px",
-                color: "text",
-              }}
-            />
+            <Logo />
           </Link>
 
           <IconButton
             sx={{
-              ml: "auto",
-              width: "100px",
-              mr: "-30px",
+              p: "0",
+              m: "0.6em",
             }}
             onClick={() => setMenuIsOpen(!menuIsOpen)}
           >
