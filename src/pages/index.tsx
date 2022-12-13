@@ -7,7 +7,7 @@ const Home: NextPage = () => {
     <Layout>
       <Grid sx={{ width: "100%", px: "2em" }}>
         <Flex sx={{ flexDirection: "column", py: "1em" }}>
-          <Image src="happy.png" sx={{ borderRadius: 1, size: "stretch" }} />
+          <Image src="censored.jpg" sx={{ borderRadius: 1, size: "stretch" }} />
         </Flex>
         <Flex sx={{ flexDirection: "column", py: "1em", gap: "1em" }}>
           <Paragraph variant="heading" sx={{ mt: 1 }}>
