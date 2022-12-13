@@ -90,11 +90,10 @@ const Home: NextPage = () => {
           <Image
             src="computer.png"
             sx={{
-              size: "stretch",
             }}
           />
           <Flex sx={{ flexDirection: "column", p: "2em", gap: "0.625em" }}>
-            <Paragraph sx={{ fontSize: 2, fontWeight: "700" }}>
+            <Paragraph variant="partheader">
               Derfor valgte vi Google - og hvorfor vi anbefaler deg å gjøre det
               også
             </Paragraph>
@@ -118,11 +117,10 @@ const Home: NextPage = () => {
           <Image
             src="./safety.png"
             sx={{
-              size: "stretch",
             }}
           />
           <Flex sx={{ flexDirection: "column", p: "2em", gap: "0.625em" }}>
-            <Paragraph sx={{ fontSize: 2, fontWeight: "700" }}>
+            <Paragraph variant="partheader">
               Slik øker du sikkerheten i Google Workspace - 6 tips til din
               bedrift
             </Paragraph>
@@ -146,11 +144,10 @@ const Home: NextPage = () => {
           <Image
             src="trick.png"
             sx={{
-              size: "stretch",
             }}
           />
           <Flex sx={{ flexDirection: "column", p: "2em", gap: "0.625em" }}>
-            <Paragraph sx={{ fontSize: 2, fontWeight: "700" }}>
+            <Paragraph variant="partheader">
               Ikke gå glipp av dette i Google Kalender{" "}
             </Paragraph>
             <Paragraph variant="standard">
