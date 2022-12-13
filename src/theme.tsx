@@ -11,6 +11,7 @@ export const theme = {
     blue04: "#B2D7FF",
     blue05: "#D9EBFF",
     offwhite: "#FFFFFF",
+    imagebackground: "#EAEAF4"
   },
   fonts: {
     heading: "DM Sans",
