@@ -5,54 +5,59 @@ import { Layout } from "../components/layout/layout";
 const Home: NextPage = () => {
   return (
     <Layout>
-      <Grid sx={{ width: "100%", px: 4 }}>
-        <Container>
-          <Image
-            src="happy.png"
-            sx={{ borderRadius: "40px", size: "stretch", pt: 4 }}
-          />
-        </Container>
-        <Paragraph variant="heading" mb="20px">
-          Ved å gjøre teknologi mer tilgjengelig, hjelper vi mennesker oppnå
-          mer.
-        </Paragraph>
-        <Paragraph variant="standard">
-          Gjennom å tilrettelegge og gjøre teknologi enklere og mer tilgjengelig
-          hjelper vi mennesker å oppnå sitt potensiale.
-        </Paragraph>
-        <Paragraph variant="standard">
-          {" "}
-          Vi er stolte av å være et av nordens mest fremoverlente IT-selskaper
-          og første Google Cloud-partnere.
-        </Paragraph>
-        <Link href="/technology" sx={{ color: "black", mb: "10px" }}>
-          <Paragraph variant="standard">Les om hvordan →</Paragraph>
-        </Link>
-        <Container
-          sx={{ backgroundColor: "blue00", borderRadius: "32px", mb: "20px" }}
+      <Grid sx={{ width: "100%", px: "2em" }}>
+        <Flex sx={{ flexDirection: "column", py: "1em" }}>
+          <Image src="happy.png" sx={{ borderRadius: 1, size: "stretch" }} />
+        </Flex>
+        <Flex sx={{ flexDirection: "column", py: "1em", gap: "1em" }}>
+          <Paragraph variant="heading" sx={{ mt: 1 }}>
+            Ved å gjøre teknologi mer tilgjengelig, hjelper vi mennesker oppnå
+            mer.
+          </Paragraph>
+          <Paragraph variant="standard">
+            Gjennom å tilrettelegge og gjøre teknologi enklere og mer
+            tilgjengelig hjelper vi mennesker å oppnå sitt potensiale.
+          </Paragraph>
+          <Paragraph variant="standard">
+            {" "}
+            Vi er stolte av å være et av nordens mest fremoverlente IT-selskaper
+            og første Google Cloud-partnere.
+          </Paragraph>
+          <Link href="/technology" sx={{ color: "black" }}>
+            <Paragraph variant="standard">Les om hvordan</Paragraph>
+          </Link>
+        </Flex>
+        <Flex
+          sx={{
+            flexDirection: "column",
+            backgroundColor: "blue00",
+            borderRadius: 1,
+            p: "2em",
+            gap: "0.625em",
+          }}
         >
           <Paragraph
             sx={{
-              fontSize: "24px",
+              fontSize: 2,
               color: "ayrblue10",
               fontWeight: "500",
-              px: 4,
-              pt: 4,
-              pb: 2,
             }}
           >
             Få noen velmente råd
           </Paragraph>
-          <Paragraph variant="standardwhite" px="4" pb="2">
+          <Paragraph variant="standardwhite">
             Book et møte for å høre mer om hvilke arbeidsverktøy som kan gjøre
             arbeidshverdagen mer effektiv.
           </Paragraph>
           <Link href="/booking">
-            <Paragraph variant="standardwhite" px="4" pb="4">
-              Book en tid med oss →
+            <Paragraph
+              variant="standardwhite"
+              sx={{ textDecorationLine: "underline" }}
+            >
+              Book en tid med oss
             </Paragraph>
           </Link>
-        </Container>
+        </Flex>
 
         <Grid
           columns={["1fr 1fr", "1fr 1fr"]}
@@ -61,6 +66,7 @@ const Home: NextPage = () => {
             alignItems: "center",
             flexDirection: "column",
             gap: 4,
+            py: "1em",
           }}
         >
           <Image src="./brand-logos/grid-branding.svg"></Image>
@@ -74,69 +80,88 @@ const Home: NextPage = () => {
           <Image src="./brand-logos/hyperion.svg"></Image>
           <Image src="./brand-logos/kolonihagen.svg"></Image>
         </Grid>
-        <Container backgroundColor="offwhite" sx={{ borderRadius: "8px" }}>
+        <Flex
+          sx={{
+            flexDirection: "column",
+            borderRadius: 0,
+            backgroundColor: "offwhite",
+          }}
+        >
           <Image
-            src="computer.svg"
+            src="computer.png"
             sx={{
               size: "stretch",
             }}
           />
-          <Paragraph sx={{ fontSize: "24px", fontWeight: "700", p: 4, pb: 0 }}>
-            Derfor valgte vi Google - og hvorfor vi anbefaler deg å gjøre det
-            også
-          </Paragraph>
-          <Paragraph variant="standard" px="4" pt="3">
-            Vi er stolte av å være landets aller første Google Partner. Vi har
-            faktisk vært det helt siden 2009! Men hvorfor jobber vi egentlig med
-            Google-teknologi?
-          </Paragraph>
-          <Link href="/google">
-            <Paragraph p="4" sx={{ color: "black" }}>
-              Les videre →
+          <Flex sx={{ flexDirection: "column", p: "2em", gap: "0.625em" }}>
+            <Paragraph sx={{ fontSize: 2, fontWeight: "700" }}>
+              Derfor valgte vi Google - og hvorfor vi anbefaler deg å gjøre det
+              også
             </Paragraph>
-          </Link>
-        </Container>
-        <Container backgroundColor="offwhite" sx={{ borderRadius: "8px" }}>
+            <Paragraph variant="standard">
+              Vi er stolte av å være landets aller første Google Partner. Vi har
+              faktisk vært det helt siden 2009! Men hvorfor jobber vi egentlig
+              med Google-teknologi?
+            </Paragraph>
+            <Link href="/google">
+              <Paragraph sx={{ color: "black" }}>Les videre</Paragraph>
+            </Link>
+          </Flex>
+        </Flex>
+        <Flex
+          sx={{
+            flexDirection: "column",
+            borderRadius: 0,
+            backgroundColor: "offwhite",
+          }}
+        >
           <Image
-            src="safety.svg"
+            src="./safety.png"
             sx={{
               size: "stretch",
             }}
           />
-          <Paragraph sx={{ fontSize: "24px", fontWeight: "700", p: 4, pb: 0 }}>
-            Slik øker du sikkerheten i Google Workspace - 6 tips til din bedrift
-          </Paragraph>
-          <Paragraph variant="standard" px="4" pt="3">
-            IT-sikkerhet er noe som får mye fokus nå, og dette med god grunn. Vi
-            hører ofte fra media om bedrifter som blir utsatt for angrep, og om
-            konsekvensene dette medfører.
-          </Paragraph>
-          <Link href="/safety">
-            <Paragraph p="4" sx={{ color: "black" }}>
-              Les videre →
+          <Flex sx={{ flexDirection: "column", p: "2em", gap: "0.625em" }}>
+            <Paragraph sx={{ fontSize: 2, fontWeight: "700" }}>
+              Slik øker du sikkerheten i Google Workspace - 6 tips til din
+              bedrift
             </Paragraph>
-          </Link>
-        </Container>
-        <Container backgroundColor="offwhite" sx={{ borderRadius: "8px" }}>
+            <Paragraph variant="standard">
+              IT-sikkerhet er noe som får mye fokus nå, og dette med god grunn.
+              Vi hører ofte fra media om bedrifter som blir utsatt for angrep,
+              og om konsekvensene dette medfører.
+            </Paragraph>
+            <Link href="/safety">
+              <Paragraph sx={{ color: "black" }}>Les videre</Paragraph>
+            </Link>
+          </Flex>
+        </Flex>
+        <Flex
+          sx={{
+            flexDirection: "column",
+            borderRadius: 0,
+            backgroundColor: "offwhite",
+          }}
+        >
           <Image
-            src="trick.svg"
+            src="trick.png"
             sx={{
               size: "stretch",
             }}
           />
-          <Paragraph sx={{ fontSize: "24px", fontWeight: "700", p: 4, pb: 0 }}>
-            Ikke gå glipp av dette i Google Kalender{" "}
-          </Paragraph>
-          <Paragraph variant="standard" px="4" pt="3">
-            Dette er de nye triksene i Google kalender om vil gjøre
-            arbeidshverdagen din enda enklere.
-          </Paragraph>
-          <Link href="/tips">
-            <Paragraph p="4" sx={{ color: "black" }}>
-              Les videre →
+          <Flex sx={{ flexDirection: "column", p: "2em", gap: "0.625em" }}>
+            <Paragraph sx={{ fontSize: 2, fontWeight: "700" }}>
+              Ikke gå glipp av dette i Google Kalender{" "}
             </Paragraph>
-          </Link>
-        </Container>
+            <Paragraph variant="standard">
+              Dette er de nye triksene i Google kalender om vil gjøre
+              arbeidshverdagen din enda enklere.
+            </Paragraph>
+            <Link href="/tips">
+              <Paragraph sx={{ color: "black" }}>Les videre</Paragraph>
+            </Link>
+          </Flex>
+        </Flex>
       </Grid>
     </Layout>
   );
